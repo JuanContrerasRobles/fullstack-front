@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <title>Pizzas Full Stack</title>
+</head>
+<body>
+    <div>
+        <img src="images/Logo_pizzas_full_stack.png" alt="Logo pizzas full stack" class="logo">
+        <h1 class="titulo">
+            Pizzas Full Stack
+        </h1>
+    </div>
+    <div>
+        <form action="http://localhost:5000/pizza" method="post" id="formulario">
+            <div class="datosCliente">
+                <div>
+                    <h2>
+                        Datos del cliente
+                    </h2>
+                </div>
+                <div class="campoNombre">
+                    <label for="Nombre" id="LabelNombre">Nombre</label>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Tu nombre">
+                    <div id="alerta"></div>
+                </div>
+                <div class="campoApellidos">
+                    <label for="Apellidos" id="LabelApellidos">Apellidos</label>
+                    <input type="text" name="Apellidos" id="Apellidos" placeholder="Tus Apellidos">
+                    <div id="alerta2"></div>
+                </div>
+                <div class="campoFecha">
+                    <label for="Fecha_de_nacimiento">Fecha de nacimiento</label>
+                    <input type="date" name="Fecha_de_nacimiento" id="Fecha_de_nacimiento">
+                </div>
+                <div class="campoTelefono">
+                    <label for="Numero_telefono">Numero de teléfono</label>
+                    <input type="number" name="Numero_telefono" id="Numero_telefono" placeholder="Tu teléfono">
+                </div>
+                <div class="campoDireccion">
+                    <label for="direccion">Dirección</label>
+                    <textarea name="Direccion" id="direccion" cols="21" rows="5"></textarea>
+                </div>
+            </div>
+            <div class="datosPedido">
+                <div>
+                    <h2>
+                        Datos del pedido
+                    </h2>
+                </div>
+                <div>
+                    <h4>
+                        Escoge el tamaño
+                    </h4>
+                    <select name="Tamaño" id="tamaño">
+                        <option value="Pequeña">Pequeña</option>
+                        <option value="Mediana">Mediana</option>
+                        <option value="Grande">Grande</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>
+                        Selecciona los ingredientes
+                    </h4>
+                </div>
+                <div>
+                    <label for="ingrediente1" class="ingredientes">Jamon york</label>
+                    <input type="checkbox" name="Ingrediente1" id="ingrediente1" value="Jamon York">
+                </div>
+                <div>
+                    <label for="ingrediente2" class="ingredientes">Champiñones</label>
+                    <input type="checkbox" name="Ingrediente2" id="ingrediente2" value="Champiñones">
+                </div>
+                <div>
+                    <label for="ingrediente3" class="ingredientes">Pepperoni</label>
+                    <input type="checkbox" name="Ingrediente3" id="ingrediente3" value="Pepperoni">
+                </div>
+                <div>
+                    <label for="ingrediente4" class="ingredientes">Aceitunas</label>
+                    <input type="checkbox" name="Ingrediente4" id="ingrediente4" value="Aceitunas"> 
+                </div>
+                &nbsp;
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+            </div>
+        </form>
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/script-jquery.js"></script>
+</body>
+</html>

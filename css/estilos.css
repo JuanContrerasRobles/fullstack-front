@@ -1,0 +1,50 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Para alinear la imagen con el titulo*/
+
+.logo{
+    padding-top: 8px;
+}
+
+.titulo{
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* Color de fondo para el formulario */
+
+.datosCliente{
+    background-color: #55ccff;
+}
+
+.datosPedido{
+    background-color: #40ccbb
+}
+
+/* Para alinear los campos entre ellos */
+
+form input{
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
+form label{
+    display: inline-block;
+    width: 170px;
+    vertical-align: top;
+}
+
+/* Para dar ancho a la etiqueta label de los ingredientes */
+
+.ingredientes{
+    width: 105px;
+
+}
+
+input[type="checkbox"]{
+    height: 15px;
+    width: 15px;
+}
+

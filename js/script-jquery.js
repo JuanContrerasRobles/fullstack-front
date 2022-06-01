@@ -18,4 +18,15 @@ $(function(){
             $("#LabelApellidos").css("color","#000");
         })
     })
-})  
+})
+
+$("#tamaño").on('change',function(){
+    console.log(this.value);
+        $.ajax({
+            type: "POST",
+            url: "http://localhost:5000/checksize",
+            success: function(resultado){
+                $("#resultado_tamaño").text(resultado)
+            }
+        })
+})

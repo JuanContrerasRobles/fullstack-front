@@ -48,3 +48,9 @@ input[type="checkbox"]{
     width: 15px;
 }
 
+/* Alinear "resultado" que contiene el valor de "resultado_tamaño la derecha
+del selector de los tamaños de pizza*/
+
+.resultado{
+    display: inline-block;
+}

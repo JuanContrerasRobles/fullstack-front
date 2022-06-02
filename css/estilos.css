@@ -2,7 +2,7 @@
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/* Para alinear la imagen con el titulo*/
+/* Para alinear la imagen con el titulo */
 
 .logo{
     padding-top: 8px;
@@ -11,6 +11,12 @@
 .titulo{
     display: inline-block;
     vertical-align: top;
+}
+
+/* Cambia de color el texto del pedido realizado correctamente */
+
+.pedido_correcto{
+    color: #006400;
 }
 
 /* Color de fondo para el formulario */
@@ -48,8 +54,8 @@ input[type="checkbox"]{
     width: 15px;
 }
 
-/* Alinear "resultado" que contiene el valor de "resultado_tamaño la derecha
-del selector de los tamaños de pizza*/
+/* Alinear "resultado" que contiene el valor de "resultado_tamaño" a la derecha
+del selector de los tamaños de pizza */
 
 .resultado{
     display: inline-block;
